@@ -1,0 +1,46 @@
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5em;
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3em;
+    text-align: left;
+}
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: underline;
+    font-size: 2em;
+    color: black;
+}
+
+body {
+    background-color: red;
+    border: solid black 10px;
+
+}
+
+#button {
+    margin-right: 8em;
+    box-shadow: 2px 0 lime;
+    background: gold;
+}
+
+#buttons {
+    width: 5em;
+    box-shadow: black;
+    background-color: blue;
+}
+
+#nav_bar ul {
+    list-style: none;
+    padding: 1em 0;
+    border-top: 2px solid lime;
+    border-bottom: 2px solid lime;
+    text-align: center;
+    color: gold;
+}

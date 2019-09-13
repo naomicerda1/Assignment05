@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Assignment05</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="html" href="process-form.html">
 </head>
 <body>
     <h1>Naomi's Delicacies</h1>
@@ -16,13 +17,13 @@
             <h3>Your Information</h3>
             <form action="process-form.html" method="POST">
                 <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name" placeholder="EX: Naomi">
+                <input type="text" name="first-name" id="first-name" placeholder="EX: Naomi" required>
                 <br>
                 <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" placeholder="EX: Cerda">
+                <input type="text" name="last-name" id="last-name" placeholder="EX: Cerda" required>
                 <br>
                 <label for="email-address">Email-Address</label>
-                <input type="email" name="email-address" id="email-address" placeholder="EX: nc@gmail.com">
+                <input type="email" name="email-address" id="email-address" placeholder="EX: nc@gmail.com" required>
                 <br>    
             </form>
         </section>
@@ -85,8 +86,12 @@
         </section>
     </main>
     <footer>
-        <input type="submit" name="submit" id="button" value="Submit">
-        <input type="reset" name="clear" id="button" value="Clear">
+        <form action="process-form.html">
+            <button type="submit">Submit</button>
+        </form>
+        <form action="index.html">
+            <button type="reset">Clear</button>
+        </form>
     </footer>
     <footer>
         <p>Copyright &copy; Naomi Cerda's Delicacies 2019</p>
