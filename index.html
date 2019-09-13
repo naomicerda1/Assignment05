@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment05</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Naomi's Delicacies</h1>
+    <br>
+    <h2>What Would You Like To Order Today?</h2>
+    <main>
+        <section>
+            <h3>Your Information</h3>
+            <form action="process-form.html" method="POST">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" placeholder="EX: Naomi">
+                <br>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" placeholder="EX: Cerda">
+                <br>
+                <label for="email-address">Email-Address</label>
+                <input type="email" name="email-address" id="email-address" placeholder="EX: nc@gmail.com">
+                <br>    
+            </form>
+        </section>
+        <section>
+            <h3>Order</h3>
+            <form name="order" action="order.php" method="POST">
+                <fieldset>
+                    <legend>Food Options</legend>
+                    <input type="radio" name="foodoptions" id="foodoptions" value="Lemon Butter Spaghetti">
+                    <label for="foodoptions1">Lemon Butter Spaghetti</label><br>
+                    <input type="radio" name="foodoptions" id="foodoptions" value="Turkey Veggie Meatloaf">
+                    <label for="foodoptions2">Turkey Veggie Meatloaf</label><br>
+                    <input type="radio" name="foodoptions" id="foodoptions" value="Tofu Turkey Burger">
+                    <label for="foodoptions3">Tofu Turkey Burger</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Sides</legend>
+                    <input type="checkbox" name="sides" id="sides1" value="Brown Rice">
+                    <label for="sides1">Brown Rice</label><br>
+                    <input type="checkbox" name="sides" id="sides2" value="Fresh Mixed Vegetables">
+                    <label for="sides2">Fresh Mixed Vegetables</label><br>
+                    <input type="checkbox" name="sides" id="sides3" value="Caesar Salad">
+                    <label for="sides3">Caesar Salad</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Drink Options</legend>
+                    <input type="radio" name="drinkoptions" id="drinkoptions1" value="Bottled Water">
+                    <label for="drinkoptions1">Bottled Water</label><br>
+                    <input type="radio" name="drinkoptions" id="drinkoptions2" value="Freshly Brewed Green Tea">
+                    <label for="drinkoptions2">Freshly Brewed Green Tea</label><br>
+                    <input type="radio" name="drinkoptions" id="drinkoptions3" value="Canned Ginger Ale">
+                    <label for="drinkoptions3">Canned Ginger Ale</label>
+                </fieldset>
+                
+                Drink Size:<br>
+                <select name="drinksize">
+                    <optgroup label="What Size Drink?">
+                        <option value="small12">Small-12oz.</option>
+                        <option value="medium16">Medium-16oz.</option>
+                        <option value="large24">Large-24oz.</option>
+                    </optgroup>"
+                </select>
+            </form>
+            <br>
+        </section>
+        <section>
+            <h3>Optional</h3>
+            <label for="food-allergy-comments">Food Allergy/Comments</label><br>
+            <textarea name="food-allergy-comments" id="food-allergy-comments" cols="30" rows="10"></textarea>
+        </section>
+        <section>
+            <h3>For Here or To-Go?</h3>
+            <fieldset>
+                <legend>Dine-In or Take-Out?</legend>
+                <input type="radio" name="dine-in-or-take-out" id="dine-in-or-take-out1" value="Dine-In">
+                <label for="dine-in-or-take-out1">Dine-In</label><br>
+                <input type="radio" name="dine-in-or-take-out" id="dine-in-or-take-out2" value="Take-Out">
+                <label for="dine-in-or-take-out2">Take-Out</label>
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        <input type="submit" name="submit" id="button" value="Submit">
+        <input type="reset" name="clear" id="button" value="Clear">
+    </footer>
+    <footer>
+        <p>Copyright &copy; Naomi Cerda's Delicacies 2019</p>
+    </footer>
+</body>
+</html>
